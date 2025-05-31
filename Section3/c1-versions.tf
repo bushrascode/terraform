@@ -10,6 +10,12 @@ terraform {
   }
 }
 
+provider "aws" {
+  # Configuration options
+  region = "us-east-2"
+  profile = "default"
+}
+
 /* 
 aws on line 6 is a local name 
 local names are module specific and should be unique per-module
