@@ -18,4 +18,11 @@
 - The .tfstate file is where Terraform keeps track of what’s been created, what the real world looks like, and what changes need to be made (it is a bit like terraform's memory)
 - the tf.state file can be stored locally (default location: terraform.tfstate in the working directory) OR Remotely (via a Backend block) Common remote backends: S3 (AWS), Azure Blob Storage, Google Cloud Storage
 
+## Provider Block 
+- 🌐 Terraform Providers are the heart of Terraform. They let Terraform interact with real-world infrastructure like AWS, Azure, GCP, etc.
+- Every resource (like aws_instance, aws_s3_bucket) is implemented through a provider
+- Terraform cannot manage infrastructure without a provider
+- Providers are distributed separately from Terraform and have independent versioning and release cycles
+- The Terraform Registry is a public directory where you can download provider plugins for major platforms
+- terraform init downloads provider plugin from terraform registry to local machine -- these plugins are the modules are how terraform speaks to cloud via api calls 
 
