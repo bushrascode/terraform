@@ -1,0 +1,8 @@
+# Ignore Terraform directories and state
+**/.terraform/
+*.tfstate
+*.tfstate.backup
+*.log
+
+# Ignore downloaded Terraform provider binaries anywhere
+terraform-provider-aws_v*
