@@ -13,6 +13,9 @@ resource local name - how you refer to that aws resource so it can be referenced
 meta-arguments - adds specification to said resource 
 resource-arguments - will be specific to resource type 
 
+Remember - attributes can be ccessed outside (or later) to reference real-world values 
+         - vs arguments which is you telling Terraform how to build this aws resource 
+
 */
 
 resource "aws_instance" "myec2vm" {
