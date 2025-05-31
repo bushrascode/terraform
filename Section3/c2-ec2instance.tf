@@ -19,7 +19,7 @@ Remember - attributes can be ccessed outside (or later) to reference real-world 
 */
 
 resource "aws_instance" "myec2vm" {
-  ami           = "ami-0fc32db49bc3bfbb1"
+  ami           = "ami-06c8f2ec674c67112"
   instance_type = "t2.micro"
   user_data = file("${path.module}/app1-install.sh")
   tags = {
