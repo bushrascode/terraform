@@ -1,0 +1,12 @@
+terraform-key.pem
+# If the file will always be in that folder
+Section4/private-key/terraform-key.pem
+
+# OR (if you want to ignore any PEM file, anywhere)
+*.pem
+
+# OR (to ignore that entire folder)
+Section4/private-key/
+private-key/terraform-key.pem
+
+.DS_Store
