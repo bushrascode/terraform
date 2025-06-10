@@ -26,3 +26,15 @@ variable "ec2_instance_type_list" {
   type = list(string)
   default = [ "t2.micro" ]
 }
+
+# AWS EC2 Instance Type - Map
+variable "instance_type_map" {
+    description = "EC2 Instance Type"
+    type = map(string)
+    default = {
+       "dev" = "t2.micro"
+       "qa" = "t2.micro"
+       "prod" = "t2.micro"
+    }
+  
+}
