@@ -6,3 +6,5 @@ https://medium.com/@sanky43jadhav/deploy-aws-ec2-instance-key-pair-and-security-
 ## Architecture Diagram 
 
 ![Alt text](image-1.png)
+
+
